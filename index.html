@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Clothing</title>
+    <title>Anime Clothing test</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
         </div>
     </section>
 
-    <section id="designs">
+    <section id="featured-designs">
         <div class="container">
             <h2>Featured Designs</h2>
             <p>Discover our extensive collection of anime-inspired clothing and accessories. Browse through our catalog and find the perfect piece to complete your anime-inspired wardrobe.</p>
@@ -54,12 +54,58 @@
             <p>We offer a wide variety of products, including anime outfits, baby clothes, baggy outfits, and tech outfits. Shop our latest collections and discover new ways to express your love for anime.</p>
 
             <div class="gallery">
-                <img src="assets/imgs/baggy.jpg" alt="Anime Outfit 1">
-                <img src="assets/imgs/product1.jpg" alt="Anime Outfit 2">
-                <img src="assets/imgs/outfit1.jpg" alt="Anime Outfit 3">
-                <img src="assets/imgs/outfit2.jpg" alt="Anime Outfit 4">
-                <img src="assets/imgs/outfit3.jpg" alt="Anime Outfit 5">
-            </div>
+                <div class="product-card">
+                    <img src="assets/imgs/baggy.jpg" alt="Anime Baggy Outfit">
+                    <h3>Anime Baggy Outfit</h3>
+                    <p class="price">$49.99</p>
+                    <button onclick="addToCart('Anime Baggy Outfit', 49.99)">Buy</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/product1.jpg" alt="Anime Outfit 2">
+                    <h3>Anime Casual Outfit</h3>
+                    <p class="price">$39.99</p>
+                    <button onclick="addToCart('Anime Casual Outfit', 39.99)">Buy</button>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/outfit1.jpg" alt="Anime Outfit 3">
+                    <h3>Anime Streetwear Outfit</h3>
+                    <p class="price">$59.99</p>
+                    <button onclick="addToCart('Anime Streetwear Outfit', 59.99)">Buy</button>
+                </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Anime Clothing, we are passionate about providing high-quality, unique, and stylish anime-inspired outfits. Our mission is to bring the world of anime closer to you through fashion. Explore our collections and join the anime fashion revolution!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Do you have any questions or suggestions? We'd love to hear from you! Reach out to us using the contact form below.</p>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="more-info">
+        <div class="container">
+            <h2>Discover More</h2>
+            <p>Explore our website to find the latest trends in anime fashion. Whether you're a hardcore fan or just getting into the anime world, we have something for everyone. Don't miss out on the opportunity to express your love for your favorite anime characters through our unique and stylish clothing collections.</p>
         </div>
     </section>
 
@@ -71,5 +117,10 @@
 
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        function addToCart(productName, price) {
+            alert(`Added ${productName} to the cart. Total: $${price}`);
+        }
+    </script>
 </body>
 </html>
