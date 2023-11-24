@@ -18,8 +18,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -179,7 +178,10 @@ section h2 {
    }
 
 
-    
+.mapouter {
+    margin: auto;
+}
+
 
 
 
